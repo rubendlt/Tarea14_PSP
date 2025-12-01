@@ -56,3 +56,9 @@ IS NOT NULL AND rp.city <> 'Tracy' ORDER BY rpe.name ASC;
 
 <img width="1570" height="794" alt="Captura desde 2025-12-01 12-09-09" src="https://github.com/user-attachments/assets/a9b6733a-16b6-4d83-8524-c23c806e16d5" />
 
+## Apartado 7
+
+<img width="1570" height="794" alt="Captura desde 2025-12-01 12-11-14" src="https://github.com/user-attachments/assets/438f112d-7c25-4ab7-b7e5-4cf539d57b33" />
+<img width="1570" height="794" alt="Captura desde 2025-12-01 12-11-36" src="https://github.com/user-attachments/assets/2d72e87a-20ae-4f3b-a43a-05fa021fa050" />
+
+
