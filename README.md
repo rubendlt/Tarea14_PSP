@@ -29,3 +29,11 @@ VALUES
 ```
 <img width="1475" height="728" alt="Captura desde 2025-12-01 11-51-49" src="https://github.com/user-attachments/assets/27528d82-56d1-406c-9265-c359e41e53ce" />
 <img width="1570" height="794" alt="Captura desde 2025-12-01 11-54-23" src="https://github.com/user-attachments/assets/5978281b-4076-458b-bb1f-d03840ef5e03" />
+
+## Apartado 3
+
+Hacemos la consulta con este query
+```sql
+SELECT * FROM public."EmpresasFCT" ORDER BY fechaContacto DESC;
+```
+<img width="1570" height="794" alt="Captura desde 2025-12-01 12-00-12" src="https://github.com/user-attachments/assets/f488d05c-2fd8-4886-bc8f-1795a975b8a5" />
