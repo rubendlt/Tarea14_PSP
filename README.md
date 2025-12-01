@@ -37,3 +37,15 @@ Hacemos la consulta con este query
 SELECT * FROM public."EmpresasFCT" ORDER BY fechaContacto DESC;
 ```
 <img width="1570" height="794" alt="Captura desde 2025-12-01 12-00-12" src="https://github.com/user-attachments/assets/f488d05c-2fd8-4886-bc8f-1795a975b8a5" />
+
+## Apartado 4
+
+Este es el query
+```sql
+SELECT rp.name AS "Nombre", rp.city AS "Ciudad", rpe.name AS "Nombre Comercial de la Empresa" 
+FROM res_partner rp LEFT JOIN res_partner rpe ON rp.parent_id = rpe.id WHERE rp.parent_id 
+IS NOT NULL AND rp.city <> 'Tracy' ORDER BY rpe.name ASC;
+```
+<img width="1570" height="794" alt="Captura desde 2025-12-01 12-03-04" src="https://github.com/user-attachments/assets/b657fcc2-080e-44e9-a9cf-77f259124a90" />
+
+
