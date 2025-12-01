@@ -49,14 +49,27 @@ IS NOT NULL AND rp.city <> 'Tracy' ORDER BY rpe.name ASC;
 <img width="1570" height="794" alt="Captura desde 2025-12-01 12-03-04" src="https://github.com/user-attachments/assets/b657fcc2-080e-44e9-a9cf-77f259124a90" />
 
 ## Apartado 5
+```sql
+SELECT rp.name AS "Nombre de la Empresa", am.name AS "Número de Factura", am.invoice_date AS "Fecha de la Factura", am.amount_untaxed
+AS "Total SIN Impuestos" FROM account_move am JOIN res_partner rp ON am.partner_id = rp.id WHERE am.move_type = 'in_refund' ORDER BY am.invoice_date DESC;
+```
 
 <img width="1570" height="794" alt="Captura desde 2025-12-01 12-07-01" src="https://github.com/user-attachments/assets/e3cc9cc6-c420-436a-8244-cea7bfeed26c" />
 
 ## Apartado 6
+```sql
+SELECT rp.name AS "Nombre de la Empresa", COUNT(am.id) AS "Número de Facturas", SUM(am.amount_untaxed) AS "Total Facturado SIN IMPUESTOS" FROM account_move am
+JOIN res_partner rp ON am.partner_id = rp.id WHERE am.move_type = 'out_invoice' AND am.state = 'posted' GROUP BY rp.name HAVING COUNT(am.id) > 2 ORDER BY rp.name ASC;
+```
+
 
 <img width="1570" height="794" alt="Captura desde 2025-12-01 12-09-09" src="https://github.com/user-attachments/assets/a9b6733a-16b6-4d83-8524-c23c806e16d5" />
 
 ## Apartado 7
+```sql
+UPDATE res_partner SET email = REPLACE(email, '@bilbao.example.com', '@bilbao.bizkaia.neus') WHERE email LIKE '%@bilbao.example.com';
+```
+
 
 <img width="1570" height="794" alt="Captura desde 2025-12-01 12-11-14" src="https://github.com/user-attachments/assets/438f112d-7c25-4ab7-b7e5-4cf539d57b33" />
 <img width="1570" height="794" alt="Captura desde 2025-12-01 12-11-36" src="https://github.com/user-attachments/assets/2d72e87a-20ae-4f3b-a43a-05fa021fa050" />
